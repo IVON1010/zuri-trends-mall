@@ -1,0 +1,33 @@
+.customer-reviews {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.customer-reviews h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.review {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review p {
+  font-size: 1em;
+  font-style: italic;
+  color: #333;
+}
+
+.review h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}

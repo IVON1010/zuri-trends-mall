@@ -1,0 +1,161 @@
+/* Apply light grey background to the entire page */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+}
+
+/* Ensure the container fills the viewport */
+.container {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Center content vertically and horizontally */
+.main-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+/* Style the cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: #fff; /* White background for cards */
+}
+
+/* Payment method card styles */
+.payment-method-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s, transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ddd; /* Default border color */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Ensure full width */
+}
+
+.payment-method-card.selected {
+    background-color: #e9ecef; /* Light grey when selected */
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.payment-method-card:hover {
+    transform: scale(1.05); /* Enlarge the card slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.payment-method-card img {
+    max-width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 1rem;
+}
+
+.payment-method-card .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.payment-method-card .icon-container svg {
+    width: 2.5rem; /* Slightly larger for better visibility */
+    height: 2.5rem;
+}
+
+.payment-method-card .info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.payment-method-card .info-container h4 {
+    margin: 0;
+    font-size: 1.125rem; /* Slightly larger font size */
+    font-weight: bold;
+}
+
+.payment-method-card .info-container p {
+    margin: 0.25rem 0;
+    font-size: 0.875rem; /* Slightly smaller font size for description */
+}
+
+.payment-method-card .info-container small {
+    color: #6c757d;
+}
+
+/* Add spacing between cards */
+.payment-method-card + .payment-method-card {
+    margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .payment-method-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .payment-method-card .icon-container {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Cart items container for horizontal alignment */
+.cart-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between items */
+    justify-content: center;
+    width: 100%; /* Ensure full width */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    flex: 1 1 200px; /* Flex-grow and basis */
+    max-width: 300px; /* Limit the maximum width */
+    background: #fff; /* White background */
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in the total width */
+}
+
+.cart-item img {
+    max-width: 100px; /* Ensure the image size is consistent */
+    height: auto;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.cart-item .info {
+    flex: 1; /* Allow info to take up the remaining space */
+}
+
+/* Cart item title and info styling */
+.cart-item h5 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.cart-item p {
+    margin: 0;
+    font-size: 0.875rem; /* Adjust font size as needed */
+}

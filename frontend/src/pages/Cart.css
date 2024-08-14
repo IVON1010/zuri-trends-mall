@@ -1,0 +1,117 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.cart-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.cart-item-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.cart-item-price,
+.cart-item-quantity {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-actions button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.cart-item-actions .decrease-btn {
+  background-color: #e3342f;
+  color: #fff;
+}
+
+.cart-item-actions .decrease-btn:hover {
+  background-color: #cc1f1a;
+}
+
+.cart-item-actions .increase-btn {
+  background-color: #38c172;
+  color: #fff;
+}
+
+.cart-item-actions .increase-btn:hover {
+  background-color: #28a745;
+}
+
+/* Total and buttons */
+.cart-total {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.cart-buttons .continue-btn,
+.cart-buttons .checkout-btn {
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: none;
+  color: #fff;
+}
+
+.cart-buttons .continue-btn {
+  background-color: #6c757d;
+}
+
+.cart-buttons .continue-btn:hover {
+  background-color: #5a6268;
+}
+
+.cart-buttons .checkout-btn {
+  background-color: #007bff;
+}
+
+.cart-buttons .checkout-btn:hover {
+  background-color: #0056b3;
+}

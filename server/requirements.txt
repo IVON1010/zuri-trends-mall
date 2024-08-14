@@ -1,0 +1,7 @@
+Flask==3.0.3
+Flask-SQLAlchemy
+Flask-Migrate==4.0.7
+python-dotenv
+flask_script
+requests
+flask-cors
